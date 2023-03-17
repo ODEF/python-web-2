@@ -1,0 +1,15 @@
+for _ in range(int(input("input number: "))):
+     word = input("input word: ")
+     word = list(word[::-1])
+     done = 0
+     for i in range(1,len(word)):
+         if word[i-1] > word[i]:
+             for j in range(i):
+                 if word[j] > word[i]:
+                     word[j],word[i] = word[i],word[j]
+                     word = sorted(word[:i])[::-1] + word[i:]
+                     print("".join(word[::-1]))
+                     break
+             break
+     else:
+         print("no answer")
