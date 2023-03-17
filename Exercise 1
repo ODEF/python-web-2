@@ -1,0 +1,21 @@
+# Exercise 1: 
+
+
+
+# from collections import Counter
+
+# #TO find how much word will be shown
+# int1 = int(input("Words number: "))
+
+# word = [list(map(str, input("write word: ").split())) for _ in range(int1)]
+
+# it will extract first elements from wors wich is readen from visitor
+# words = [x[0] for x in word]
+
+# it will print unique words 
+# print(len(Counter(words).keys()))
+
+# it will count words by creating ist of frequencies
+# val = list(Counter(words).values())
+# listToStr = ' '.join([str(elem) for elem in val])
+# print(listToStr) 
